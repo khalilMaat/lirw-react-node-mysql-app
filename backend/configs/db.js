@@ -14,8 +14,9 @@ const db = mysql.createConnection({
    password: 'appuser',
    database: 'react_node_app',
    waitForConnections: true,
-   connectionLimit: 10,
-   queueLimit: 0
+   connectionLimit: 20,
+   queueLimit: 0,
+   connectTimeout: 10000 // 10 seconds
 });
 
 
