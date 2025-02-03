@@ -8,11 +8,11 @@ const password = process.env.DB_PASSWORD || 'appuser';
 const database = process.env.DB_NAME || 'react_node_app';
 
 const db = mysql.createConnection({
-   host: 'primary-db-instance.c7q8kyusk6qi.us-east-1.rds.amazonaws.com',
-   port: '3306',
-   user: 'appuser',
-   password: 'appuser',
-   database: 'react_node_app',
+   host: host,
+   port: port,
+   user: user,
+   password: password,
+   database: database,
    waitForConnections: true,
    connectionLimit: 20,
    queueLimit: 0,
